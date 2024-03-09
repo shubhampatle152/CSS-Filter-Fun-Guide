@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(162, 212, 245);
+    color: aliceblue;
+    text-shadow: 1px 2px 3px red;
+    gap: 5px;
+    padding: 10px;
+}
+
+.kids {
+    width: 25%;
+    height: 100vh;
+    background-color:rgb(15, 9, 9);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.kids img {
+    width: 70%;
+    height: 25%;
+    border-radius: 7px;
+    margin-top: 10px;
+
+}
+
+.mens {
+    width: 25%;
+    height: 100vh;
+    background-color:rgb(15, 9, 9);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.mens img {
+    width: 70%;
+    height: 25%;
+    border-radius: 7px;
+    margin-top: 10px;
+
+}
+.legend{
+    text-align: center;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(15, 9, 9);
+    border-radius: 15px;
+}
+
+
+.legendheading{
+    font-size: 2.5rem;
+
+}
+
+.legends {
+
+    display: grid;
+    gap: 10px;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  
+}
+h3{
+    text-align: center;
+    color: khaki ;
+    text-shadow: 1px 1px 5px rgb(5, 22, 250);
+}
+.legends img {
+    width: 50%;
+    height: 30%;
+    border-radius: 7px;
+   
+ 
+  
+
+}
+
+.legendhead{
+   position: absolute;
+   right: 16%;
+
+}
+.contrast:hover{
+    filter: contrast(200%);
+
+}
+.grayscale:hover{
+    filter: grayscale(80%);
+}
+.blur:hover{
+    filter: blur(5px);
+}
+.brightness:hover{
+    filter: brightness(140%);
+}
+.hue-rotate:hover{
+    filter: hue-rotate(90deg);
+}
+.drop-shadow:hover{
+    filter: drop-shadow(16px 16px 16px red) ;
+}
+.invert:hover{
+    filter: invert(75%) ;
+}
+.sepia:hover{
+    filter: sepia(100%) ;
+}
+.opacity:hover{
+    filter: opacity(25%) ;
+}
+.saturate:hover{
+    filter: saturate(30%) ;
+}
+
+
+
+
+@media only screen and (max-width:1000px) {
+    .container{
+       display: grid;
+       grid-template-columns: 1fr 1fr ;
+       grid-template-rows: 1fr 1fr ;
+  
+    }
+    .kids {
+        width: 50vh;
+        height: auto;
+        background-color:rgb(15, 9, 9);
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .kids img {
+        width: 50%;
+        height: 60%;
+        border-radius: 7px;
+        margin-top: 10px;
+    
+    }
+    .mens {     
+        width: 50vh;
+        height: auto;
+        background-color:rgb(15, 9, 9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mens img {
+        width: 50%;
+        height: 60%;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+    .legend{
+        height: auto;
+        grid-column: -3/-1;
+        grid-row: 2/3;
+        width: 100%
+    }
+    .legends {
+        display: grid;
+        place-content: center;
+        place-items:center;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+}}
+@media only screen and (max-width:600px) {
+    .container{
+       display: flex;
+       flex-direction: column;
+  
+    }
+    .kids {
+        width: 100vw;
+        height: 40vh;
+        background-color:rgb(15, 9, 9);
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .kids img {
+        width: 45%;
+        height: 60%;
+        border-radius: 7px;
+        margin-top: 10px;
+    
+    }
+    .mens {     
+        width: 100vw;
+        height: 40vh;
+        background-color:rgb(15, 9, 9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mens img {
+        width: 45%;
+        height: 60%;
+        border-radius: 7px;
+        margin-top: 10px;}
+    .legend{
+        width: 100vw;
+        height: auto;  
+        
+    }
+    .legends {
+       width: 100%;
+       height: auto;
+        display: grid;
+        place-content: center;
+        place-items:center;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+}}
